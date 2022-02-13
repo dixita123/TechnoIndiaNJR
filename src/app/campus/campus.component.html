@@ -1,0 +1,29 @@
+<div class="jumbotron jumbotron-fluid">
+    <div class="container">
+      <h1 class="display-1">Campus At Glance</h1>
+      <hr>
+    </div>
+</div>
+<div class="location">
+    <div class="content">
+        <h2>Location</h2>
+    <p>Udaipur, the city of tranquil water lakes, is one of the most naturally beautiful city on the planet earth. Udaipur is therefore rightly called the Venice of East.
+        Udaipur has also developed into an Education Hub with 5 Universities, 3 Medical Colleges, 4 Dental colleges, 13 Engineering colleges, and many other institutes for Management, Science, Nursing & Pharmacy. Students from Africa, Gujrat, Madhya Pradesh, Bihar, North East, Jammu & Kashmir, and other parts of India come to Udaipur to undertake professional education.</p>
+    </div>
+    <img src="../../assets/udaipur.jpg">
+</div>
+<div class="facilities">
+    
+        <h2>Facilities</h2>
+    <p>Techno NJR campus is located in a green 10-acre plot situated amongst hills at Bhamashah Industrial area, Kaladwas. There are many colleges in surrounding areas and the area is fast coming up as an education hub of Udaipur. The campus is equipped with all modern facilities required to make student’s stay at campus comfortable.
+        Some highlights of facilities at Techno NJR campus:</p>
+       <div class="row">
+        <div *ngFor="let i of facilities" class="col-4">
+            <div >
+              <h3>{{i.heading}}</h3>
+              <p>{{i.description}}</p>
+            </div>
+        </div>
+       </div>
+</div>
+<app-footer></app-footer>

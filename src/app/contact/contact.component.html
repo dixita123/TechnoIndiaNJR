@@ -1,0 +1,56 @@
+<div class="jumbotron">
+  <h1>Contact Us</h1>
+</div>
+ <h2 style="padding: 10px; font-weight: bold;">General Contact Information</h2>
+ <div class="justify-content-md-center" class="contact">
+    <div class="row justify-content-md-center">
+        <div class="col-lg-4">
+             
+            <h5 class="card-title"> <i class="bi bi-geo-alt"></i>  Address</h5>
+            <p class="card-text">Plot-SPL-T, Bhamashah (RIICO) Industrial Area, Kaladwas, Udaipur 313003 (Rajasthan) India</p>
+         </div>
+        <div class="col-3">
+            
+            <h5 class="card-title"><i class="bi bi-telephone"></i>  Contact</h5>
+            <p class="card-text">Phone: +91 294 2650214 – 17</p>
+            <p>Mail: director@technonjr.org </p>
+        </div>
+        <div class="col-3">
+            
+            <h5 class="card-title"><i class="bi bi-clock"></i>  Hours Of Operation</h5>
+            <p class="card-text">Monday - Saturday: 09:00 - 17:00</p>
+        </div>
+           
+    </div>
+</div>
+<div class="contact_info row">
+    <div class="card col-md-4"  *ngFor="let i of contact">
+        <div class="card-body ">
+          <h4 class="card-title">{{i.post}}</h4>
+          <h5 class="card-subtitle mb-2 text-muted">{{i.name}}</h5><br>
+          <span><i class="bi bi-telephone"></i>+{{i.number}}</span><br><br>
+          <span><i class="bi bi-envelope"></i>{{i.email}}</span>
+        </div>
+      </div>
+</div>
+
+<form class="contactForm col-md-auto">
+  <h4 class="col-lg-5 contact_title"> Q<br><br>u<br><br>e<br><br>r<br><br>y<br> <br>F<br><br>o<br><br>r<br><br>m</h4>
+    <div class="form-group col-lg-4">
+      <label for="exampleInputname">Full Name</label>
+      <input type="text" class="form-control" id="exampleInputname" aria-describedby="nameHelp" placeholder="Enter Full Name">
+        <label for="exampleInputEmail1">Email address</label>
+        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+
+        <label for="exampleInputNumber">Contact Number</label>
+        <input type="number" class="form-control" id="exampleInputNumber" placeholder="+91-9999999999">
+        <div class="description">
+          <label for="exampleInputNumber">Description</label>
+          <input type="number" class="form-control" id="exampleInputDescription" >
+        </div>
+         
+    <button type="submit" class="btn btn-primary">Submit</button>
+    </div>
+
+</form>
+  <app-footer></app-footer>

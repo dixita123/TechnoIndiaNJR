@@ -1,0 +1,107 @@
+<div class="header">
+  <h1>
+    Civil Engineering
+  </h1>
+  <h2 style="color: #a0162a; padding: 20px;">Intake: 60 Seats</h2>
+</div>
+<p style="width: 90%;  font-size: medium;">As India rapidly advances to become a developed nation, huge investments will be made in infrastructure development like highways, flyovers, airports, metro rail, tunnels and urban infrastructure. Moreover, government emphasis on smart cities, housing for all, and urban renewal will give further boost to demand of skilled civil engineers who have knowledge and skills to execute such large projects effectively in time bound manner.
+    The major focus of the Civil Engineering department at Techno India NJR is to provide theoretical and hands own knowledge so that students acquire the skills and knowledge that is necessary to work in large construction firms as well as to start their own entrepreneurial venture.
+    
+    </p>
+<h4 class="head">Specialization</h4>
+<div class="specialization">
+
+  <div class="card bg-dark text-white ">
+    <img src="../../assets/civil engineering/smrt city.jpg" class="card-img" alt="...">
+    <div class="card-img-overlay">
+      <h5 class="card-title">
+        Smart City Technologies</h5>
+    </div>
+  </div>
+  <div class="card bg-dark text-white ">
+    <img src="../../assets/civil engineering/construction project.jpg" class="card-img" alt="...">
+    <div class="card-img-overlay">
+      <h5 class="card-title">Construction Project Planning and Management</h5>
+    </div>
+  </div>
+  <div class="card bg-dark text-white ">
+    <img src="../../assets/civil engineering/arvr.png" class="card-img" alt="...">
+    <div class="card-img-overlay">
+      <h5 class="card-title">Augmented & Virtual Reality</h5>
+    </div>
+  </div>
+  <div class="card bg-dark text-white ">
+    <img src="../../assets/civil engineering/structural analysis.jpg" class="card-img" alt="...">
+    <div class="card-img-overlay">
+      <h5 class="card-title">Structural Analysis and Design</h5>
+    </div>
+  </div>
+</div>
+
+ <mat-tab-group class="tabs">
+  <mat-tab label="STATE OF ART LABORATORIES"> 
+    <ul>
+      <li>Computer Aided Structural Design Lab</li>
+      <li>Computer Aided Drafting Lab</li>
+      <li>Road Material Testing Lab</li>
+      <li>Geotechnical Engineering Lab</li>
+      <li>Concrete Technology Lab</li>
+      <li>Drawing Studios</li>
+      <li>Surveying Lab</li>
+      <li>Fluid Mechanics & Hydraulics Lab</li>
+      <li>Theory of Structures Lab</li>
+      <li>Engineering Geology</li>
+      <li>Environmental Engineering</li>
+      
+    </ul>
+  </mat-tab>
+  <mat-tab label="ADVANCE SOFTWARE & EQUIPMENT"> 
+    <li>Bentley Staad Pro</li>
+    <li>Autodesk 3ds Max</li>
+    <li>Autodesk Revit (Building Information Modelling)</li>
+    <li>AutoCAD</li>
+    <li>Total Station</li>
+    <li>2000 kN Compression Testing Machine</li>
+    <li>Computerized UTM (600 kN)</li>
+    <li>6 m Long Tilting Flume</li>
+    <li>Direct Shear Apparatus</li>
+    <li>Triaxial Compressive Strength Apparatus</li>
+
+    </mat-tab>
+  <mat-tab label="INDUSTRY ORIENTED TRAINING"> 
+    <ul>
+      <li>Smart/Green Building Design</li>
+      <li>Earthquake Resistant Structural Design</li>
+      <li>Quantity Survey and Valuation</li>
+      <li>Project Planning and Management</li>
+      <li>Land Survey and Valuation</li>
+      <li>2D Design and Drafting</li>
+      <li>3D Visualization, Modelling and Rendering</li>
+      <li>Structural Drawing and Reinforcement Detailing</li>
+      <li>Regular Site Visits</li>
+    </ul>
+    </mat-tab>
+</mat-tab-group>
+<h1 style="color: #a0162a; text-align: center; padding: 20px; font-size: 50px; border: 1px solid #a0162a; width: 90%; margin: auto;">Our Faculty</h1>
+ <section>
+    <div class="container">
+      <div class="card col-md-3" *ngFor="let i of faculty">
+        <div class="content">
+            <div class="imgBx">
+              <img [src]="i.img">
+            </div>
+            <div class="contentBx">
+              <h3>{{i.name}}<br><span>{{i.post}}</span></h3>
+            </div>
+          </div>
+          <ul class="sci">
+            <li style="--i:1">
+             <a > <i class="bi bi-envelope-open-fill" aria-hidden="true" ></i></a>
+            </li>
+          </ul>
+        </div>
+     
+      </div>
+  </section>
+ 
+  <app-footer></app-footer>

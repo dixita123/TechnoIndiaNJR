@@ -1,0 +1,126 @@
+form{
+    margin: auto;
+    width: 100%;
+    background-color: cadetblue;
+    padding: 40px;
+    
+    
+}
+form label{
+font-size: x-large;
+margin: 20px;
+}
+
+.form-group input{
+  max-width: 500px;
+
+}
+.form-group .description input{
+    max-width:500px ;
+    height: 150px;
+    
+}
+.form-group{
+    margin-left: 70px;
+}
+
+.contact{
+    margin: auto;
+    background-color: rgb(243, 242, 242);
+    padding: 100px;
+}
+.form-group button{
+    margin-top: 20px;
+    background-color: rgb(5, 5, 34);
+    border-radius: 10%;
+    border: none;
+    box-shadow: 0 15px 35px rgba(0,0,0,0.2);
+}
+.contact h5{
+    font-size:x-large;
+}
+.contact p{
+    font-size: medium;
+}
+.contactForm{
+    display: flex;
+    
+}
+.contactForm h4{
+    font-size: xx-large;
+    text-shadow: 25px 10px 8px black ;
+}
+.row{
+    border: none;
+}
+.row i{
+    color: #ae152d;
+}
+h2{
+    text-align: center;
+    font-family:sans-serif;
+}
+.row{
+    display: flex;
+    max-width: 100%;
+}
+.contact_info{
+    width: 90%;
+    margin: auto;
+}
+.contact_title{
+   padding: 100px;
+   padding-left: 300px;
+}
+.card{
+    height: 250px;
+    width: 350px;
+    margin: 50px;
+}
+.card h4{
+    color: #ae152d;
+font-size: 1.7em;
+}
+.card h5{
+  font-size: 1em;
+}
+.card span i{
+    margin-right: 10px;
+
+}
+span{
+    font-size: medium;
+    padding-top: 30px;
+}
+.card:hover{
+   box-shadow: 0 15px 35px rgba(0,0,0,0.2);
+}
+@keyframes hideMe{
+    0%{
+        opacity: 0;
+    }
+    99.99%{
+        opacity: 1;
+        transform: translateY(40px);
+    }
+    100%{
+        opacity: 1;
+    }
+
+}
+.jumbotron{
+    background-color: black;
+    width: 100%;
+    height: 300px;
+    padding: 50px;
+    font-size: 90px;
+    text-align:center;
+    color: whitesmoke;
+    
+}
+.jumbotron h1{
+    font-size: 90px;
+    text-align:center;
+    animation: hideMe 3s forwards;
+    margin-top: 100px;
+}

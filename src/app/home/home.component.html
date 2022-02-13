@@ -1,0 +1,185 @@
+<div class="home col-12">
+  <section>
+     <img src="../../assets/campus-2.jpeg"> 
+  </section>
+  
+  <div class="card bg-dark text-white overlay" style=" text-align: center; justify-content: center; align-items: center;  position: absolute;
+  top: 25%;
+  left: 40%;
+  right: 30%;
+  transform: translate(-50%, -50%);">
+
+    <div class="card-img-overlay" style=" background: black; opacity: 0.6; height: 200px; width: 800px; ">
+      <h5 class="card-title" >TECHNO INDIA NJR INSTITUTE OF TECHNOLOGY</h5>
+      <p class="card-text" style="opacity: 1; font-weight: bold; letter-spacing: 0.5rem;">LIVE YOUR DREAMS,
+        BE A TECHNOITE</p>
+      <p class="card-text"><a class="btn btn-lg btn-light">submit your application</a></p>
+    </div>
+  </div>
+ <!-- <section class="home">
+    <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active" data-bs-interval="10000">
+            <img src="../../assets/campus.jpg" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item" data-bs-interval="2000">
+            <img src="../../assets/hackhathon.jfif" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="../../assets/Techno-Logo-min-1-448x101.png" class="d-block w-100" alt="...">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+      <div class="content">
+        <a class="btn btn-lg btn-light">submit your application</a>
+      </div>
+</section>-->
+<div style="display: flex; margin: 40px;">
+  <h1 style="text-align: center; color:#a0162a; font-weight: bolder;" class="col-md-8">What's Happening @ Techno NJR</h1>
+  <button class="float-md-right col-md-2" style="border: none; background-color: #a0162a; color:white;">View All</button>
+</div>
+<div class="blog-content" >
+
+    <div class="news col-12">
+      <marquee class="marq col-12" direction="left"
+               loop="" onmouseover="stop()" onmouseout="start()">
+          <div class="container col-12">
+            <div class="card col-md-6 row" *ngFor="let i of latestnews">
+    
+              <img [src]="i.img">
+              <div class="contentBx">
+                  <div style="padding: 20px;">
+                      <p><span style="color: #a0162a; font-size: 100px;">.</span>{{i.year}}</p>
+                      <h2 class="head">{{i.haeding}}</h2>
+                      <p>{{i.subhead}}</p>
+                      <p>{{i.date}}</p>
+                    </div>
+           </div>
+           </div>
+          </div>
+      
+      </marquee>
+      </div>
+     
+</div>
+<div style="display: flex;">
+  <div class="title col-md-6">
+      <h1>
+        Visit <br>Techno India NJR
+      </h1>
+  </div>
+  <iframe [src]='safeURL'  frameborder="0" allowfullscreen class="col-md-4"></iframe>
+</div>
+<div class="btitle">
+  <h2 style="margin-top: 100px; font-size: 30px; line-height: 3rem;">Explore Bachelors & Master Program<br>
+    Choose from 5 Bachelors & 1 Masters Program</h2> <br>
+</div>
+<mat-tab-group class="tabs-bachelor" mat-align-tabs="center">
+<mat-tab label="Bachelor's Program" >
+<div class="card-section" style="display: flex; ">
+  
+
+        <div class="flip-card col-2" >
+         <div class="flip-card-inner">
+           <div class="flip-card-front">
+               <img src="../../assets/cs.jpg" alt="Avatar" >
+           </div>
+           <div class="flip-card-back">
+            <p>Total Seats: </p> 
+            <h1>120</h1> 
+           </div>
+         </div>
+       </div>
+       
+       <div class="flip-card col-2" >
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <img src="../../assets/ELECTRONICS & COmmunication Engineering.png" alt="Avatar" >
+          </div>
+          <div class="flip-card-back">
+            <p>Total Seats: </p> 
+            <h1>60</h1> 
+          </div>
+        </div>
+      </div>
+      
+      <div class="flip-card col-2" >
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+              <img src="../../assets/Civil.png" alt="Avatar" >
+          </div>
+          <div class="flip-card-back">
+            <p>Total Seats: </p> 
+            <h1>60</h1> 
+          </div>
+        </div>
+      </div>
+      
+      <div class="flip-card col-2" >
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+              <img src="../../assets/mechanical.png" alt="Avatar" >
+          </div>
+          <div class="flip-card-back">
+            <p>Total Seats: </p> 
+            <h1>60</h1> 
+          </div>
+        </div>
+      </div>
+            
+      <div class="flip-card col-2" >
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+              <img src="../../assets/electrical.png" alt="Avatar" >
+          </div>
+          <div class="flip-card-back">
+            <p>Total Seats: </p> 
+            <h1>60</h1> 
+            
+           
+          </div>
+        </div>
+      </div>
+ 
+</div>
+</mat-tab>
+<mat-tab label="Master's Program">
+  <div class="card-section" style="display: flex;">
+          <div class="flip-card col-4" >
+           <div class="flip-card-inner">
+             <div class="flip-card-front">
+                 <img src="../../assets/COMPUTER.png" alt="Avatar" >
+             </div>
+             <div class="flip-card-back">
+              <p>Total Seats: </p> 
+              <h1>60</h1> 
+             </div>
+           </div>
+         </div>
+         <div class="card col-7" style="padding: 1%;">
+           <h5 style="text-align: center;">Master's Program @ Techno India NJR</h5>
+           <p>The candidate having passed B.Sc./ B.Com./ B.A. with mathematics at 10+2 level or at Graduation level (with additional bridge Courses as per the norms of the concerned University). Obtained at least 50% marks (45% marks in case of candidates belonging to reserved category*) in the qualifying examination. *Reserve category is hereby elaborated as candidates from SC, ST and Non creamy layer OBC and Non creamy layer MBC, PwD Category only for relaxation in MInimum Academic Qualification.</p>
+         </div>
+  </div>
+</mat-tab>
+</mat-tab-group>
+<div class="connect">
+  <h1>Let's Get Started</h1>
+  <div style="display: flex; ;" class="justify-content-md-center" >
+    <button  class="col col-lg-2">Find the Right Program</button>
+    <button  class="col-md-auto">Discuss On Call</button>
+    <button class="col col-lg-2">Start your Application</button>
+  </div>
+</div>
+
+
+</div>
+<app-footer></app-footer>

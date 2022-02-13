@@ -1,0 +1,35 @@
+<div class="jumbotron">
+    <h1>Student Clubs</h1>
+</div>
+<h1 style="text-align: center; color: #ae152d;">TECHNICAL CLUBS</h1>
+<div class="club row">
+    <div class="card" style="width: 300px ;" *ngFor="let i of club">
+        <img [src]="i.img" class="card-img-top" alt="...">
+        <div class="card-body">
+          <p class="card-text">{{i.title}}</p>
+        </div>
+      </div>
+</div>
+<div class="club2 row">
+    
+    <div class="card" style="width: 300px ;">
+        <img src="../../assets/club/non technical.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h1 class="card-text" >NON-TECHNICAL CLUB</h1>
+        </div>
+      </div>
+      
+      <div class="card" style="width: 300px ;">
+        <img src="../../assets/club/sports.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h1 class="card-text" >SPORTS CLUB</h1>
+        </div>
+      </div>
+      
+      <div class="card" style="width: 300px ;">
+        <img src="../../assets/club/social outreach.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h1 class="card-text" >SOCIAL OUTREACH CLUBS</h1>
+        </div>
+      </div>
+</div>

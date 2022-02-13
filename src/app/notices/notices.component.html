@@ -1,0 +1,19 @@
+<div class="jumbotron">
+  <h1>Notices</h1>
+</div>
+<table class="table">
+    <thead>
+      <tr>
+          <th scope="col">Date</th>
+        <th scope="col">Title</th>
+        <th scope="col">Link</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let i of notice">
+          <td>{{i.date}}</td>
+        <td style="font-weight: bold;">{{i.title}}</td>
+        <td><a [href]="i.link">Click Here</a></td>
+      </tr>
+    </tbody>
+  </table>

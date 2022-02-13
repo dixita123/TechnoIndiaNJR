@@ -1,0 +1,38 @@
+<div class="header">
+    <h1>
+      Applied Science And Humanities
+    </h1>
+  
+  </div>
+  <p style="width: 80%; margin: auto; font-size: medium;">The foundation of modern Engineering education is based on the subjects of Mathematics, Physics, Chemistry (and Biology) 
+    supported by Languages and other complimentary Engineering subjects. The First year study of any Engineering Institution 
+    always comprises of a combination of the above subjects which assigns it the name of Foundation year. A strong high-rise 
+    building can not be built on a weak foundation which signifies the importance of the Department of Applied Sciences, 
+    Engineering and Humanities.
+     <br><br>
+    At Techno NJR, due attention has been given to this aspect thereby the Applied Sciences department constitutes of 
+    highly qualified and experienced faculty of Mathematics, Physics, Chemistry, Environmental Sciences, Applied Mechanics 
+    and English supported with well equipped laboratories and trained staff.</p>
+    <h1 style="color: #a0162a; text-align: center; padding: 20px; font-size: 50px; border: 1px solid #a0162a; width: 90%; margin: auto;">Our Faculty</h1>
+    <section>
+      <div class="container">
+        <div class="card col-md-3" *ngFor="let i of faculty">
+          <div class="content">
+              <div class="imgBx">
+                <img [src]="i.img">
+              </div>
+              <div class="contentBx">
+                <h3>{{i.name}}<br><span>{{i.post}}</span></h3>
+              </div>
+            </div>
+            <ul class="sci">
+              <li style="--i:1">
+               <a > <i class="bi bi-envelope-open-fill" aria-hidden="true" ></i></a>
+              </li>
+            </ul>
+          </div>
+       
+        </div>
+    </section>
+  
+    <app-footer></app-footer>

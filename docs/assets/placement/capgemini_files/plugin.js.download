@@ -1,0 +1,147 @@
+var ktt10Btn = null;
+var ktt10Floating = null;
+
+/*document.addEventListener("DOMContentLoaded", function(event) {
+
+    ktt10.createEvents();
+
+});*/
+
+var ktt10 = {};
+ktt10.webchatUrl = "/";
+
+var ktt10i = document.currentScript.src.indexOf("plugin");
+if(ktt10i > -1)
+{
+    var s = document.currentScript.src.substring(0, ktt10i);
+    //console.log(s);
+    ktt10.webchatUrl = s;
+}
+
+// KIT TO TALK
+var ktt10Link = document.createElement("link");
+ktt10Link.href = ktt10.webchatUrl + "/plugin.css?v=2";
+ktt10Link.type = "text/css";
+ktt10Link.rel = "stylesheet";
+ktt10Link.media = "screen,print";
+document.getElementsByTagName("head")[0].appendChild(ktt10Link);
+
+ktt10.createEvents = function()
+{
+    ktt10Btn = document.querySelector(".ktt10-btn");
+    ktt10Floating = document.querySelector(".ktt10-flt");
+    ktt10Close = document.querySelector(".ktt10-close");
+
+    //console.log(ktt10.options);
+
+    if(ktt10.options.right)
+        ktt10Btn.style.right = ktt10.options.right + "px";
+
+    if(ktt10.options.bottom)
+        ktt10Btn.style.bottom = ktt10.options.bottom + "px";
+
+    ktt10Btn.onclick = function(e)
+    {
+        if(ktt10.options.type == "floating")
+        {
+            var i = document.querySelector("#ktt10-iframe");
+
+            if(!i.getAttribute('src'))
+                i.setAttribute('src', i.getAttribute('data-src'));
+
+            //if(ktt10Floating.style.transform != "translate(0px, 0px)")
+            if(!ktt10Floating.classList.contains("ktt10-flt2"))
+            {
+                //ktt10Floating.style.transform = "translate(0px, 0px)";
+                ktt10Floating.classList.add("ktt10-flt2");
+            }
+            else
+            {
+                //ktt10Floating.style.transform = "translate(120%, 0px)";
+                ktt10Floating.classList.remove("ktt10-flt2");
+            }
+        }
+
+        else if(ktt10.options.type == "window")
+        {
+            window.open(ktt10.newUrl);
+        }
+    }
+
+    ktt10Close.onclick = function(e)
+    {
+        //ktt10Floating.style.transform = "translate(120%, 0px)";
+        ktt10Floating.classList.remove("ktt10-flt2");
+    }
+}
+
+ktt10.setup = function(options)
+{
+    if(!options.type)
+        options.type = "floating";
+
+    ktt10.options = options;
+    ktt10.newUrl = ktt10.webchatUrl + "?";
+
+    if(options.pageId)
+        ktt10.newUrl += "&page_id=" + options.pageId;
+    
+    if(options.hideHeader)
+        ktt10.newUrl += "&hideHeader=" + options.hideHeader;
+
+    if(options.showPersona)
+        ktt10.newUrl += "&showPersona=" + options.showPersona;
+    
+    if(options.hideComposer)
+        ktt10.newUrl += "&hideComposer=" + options.hideComposer;
+
+    if(options.ref)
+        ktt10.newUrl += "&ref=" + options.ref;
+    /*else
+        ktt10.newUrl += "&ref=get_started_button";*/
+
+    if(options.color)
+        ktt10.newUrl += "&color=" + encodeURIComponent(options.color);
+
+    if(options.template)
+        ktt10.newUrl += "&template=" + options.template;
+
+    if(options.type == "floating")
+    {
+        ktt10.htmlBtn = '<button type="button" class="ktt10-btn"><img src="' + ktt10.webchatUrl + '../images/icons/comments-solid.svg" alt="ktt10"></button>';
+        ktt10.htmlFlt = '<div class="ktt10-flt"><span class="ktt10-close"><img height="14px" style="height: 14px !important; width: 14px !important" src="' + ktt10.webchatUrl + '../images/icons/cancel.svg"></span><iframe id="ktt10-iframe" data-src="' + ktt10.newUrl + '" class="ktt10-iframe"></iframe></div>';
+
+        document.body.innerHTML = document.body.innerHTML + ktt10.htmlFlt;
+        document.body.innerHTML = document.body.innerHTML + ktt10.htmlBtn;
+
+        ktt10.createEvents();
+    }
+
+    else if(options.type == "container")
+    {
+        ktt10.htmlFrm = '<iframe src="' + ktt10.newUrl + '" class="ktt10-iframe"></iframe>';
+
+        document.querySelector(options.element).innerHTML = ktt10.htmlFrm;
+    }
+
+    else if(options.type == "window")
+    {
+        ktt10.htmlBtn = '<button type="button" class="ktt10-btn"><img src="' + ktt10.webchatUrl + '../images/icon-white.svg" alt="ktt10"></button>';
+        document.body.innerHTML = document.body.innerHTML + ktt10.htmlBtn;
+
+        ktt10.createEvents();
+    }
+
+    if(options.color)
+    {
+        var r = document.querySelector(':root');
+        r.style.setProperty('--kttPrimaryColor', options.color);
+    }
+
+    if(options.icon)
+    {
+        var img = document.querySelector('.ktt10-btn img');
+        img.src = options.icon;
+    }
+						
+}

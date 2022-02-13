@@ -1,0 +1,46 @@
+<div class="jumbotron">
+  <h1>Life At Techno</h1>
+</div>
+<mat-tab-group class="tabs">
+    <mat-tab label="SANGHOSHTI"> 
+        <table class="table">
+            <thead>
+              <tr>
+                  <th scope="col">Date</th>
+                <th scope="col">Event</th>
+                <th scope="col">Topic</th>
+                <th scope="col">Speaker</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr *ngFor="let i of sanghoshi">
+                  <td>{{i.date}}</td>
+                <td>{{i.event}}</td>
+                <td>{{i.topic}}</td>
+                <td>{{i.speaker}}</td>
+              </tr>
+            </tbody>
+          </table>
+    </mat-tab>
+    <mat-tab label="TECHTALKS"> 
+        <table class="table">
+            <thead>
+              <tr>
+                  <th scope="col">Date</th>
+                <th scope="col">Event</th>
+                <th scope="col">Topic</th>
+                <th scope="col">Speaker</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr *ngFor="let i of sanghoshi">
+                  <td>{{i.date}}</td>
+                <td>{{i.event}}</td>
+                <td>{{i.topic}}</td>
+                <td>{{i.speaker}}</td>
+              </tr>
+            </tbody>
+          </table>
+      </mat-tab>
+
+  </mat-tab-group>

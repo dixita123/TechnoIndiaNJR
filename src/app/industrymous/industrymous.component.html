@@ -1,0 +1,22 @@
+<div class="jumbotron" aria-hidden="true">
+  <h1>Industry MoUs</h1>
+</div>
+<div class="club row">
+    <div class="card" style="width: 300px ;" *ngFor="let i of industry">
+        <img [src]="i.img" class="card-img-top" alt="...">
+        <div class="card-body">
+          <p class="card-text">{{i.title}}</p>
+        </div>
+      </div>
+</div>
+
+<div class="club2 row">
+  <h1>MOOCs</h1>
+    <div class="card" style="width: 300px ;" *ngFor="let i of MOOCs">
+        <img [src]="i.img" class="card-img-top" alt="...">
+        <div class="card-body">
+          <p class="card-text">{{i.title}}</p>
+        </div>
+      </div>
+    
+</div>

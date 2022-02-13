@@ -1,0 +1,105 @@
+<div class="header">
+    <h1>
+      Mechanical Engineering
+    </h1>
+    <h2 style="color: #a0162a; padding: 20px;">Intake: 60 Seats</h2>
+  </div>
+  <p style="width: 80%; margin: auto; font-size: medium;">Mechanical engineering is no more an engineering related to only design, production and operation of machine by man.
+     Modern mechanical engineering involves Mechatronics, Automation, Robotics, Software based Analysis and Design, 
+     Computer Aided Manufacturing using CNC machines and so on.
+    To train the students in these modern aspects the Mechanical Engineering department at Techno India NJR has state of art labs, 
+    advance software tools, and equipment. The department has also tied up with several national and international organizations to 
+    make students industry ready. Past graduates form Mechanical Engineering are placed in Bosch, Mahindra & Mahindra, JK Tyre, TCS,
+     Amazon, Capgemini, Jyoti CNC, Secure Meters, JBM, Pyrotech, Fractal Analytics, Grey Orange, Udaipur Cement, Sika India etc.
+    
+    </p>
+  <h4 class="head">Specialization</h4>
+  <div class="specialization">
+  
+    <div class="card bg-dark text-white ">
+      <img src="../../assets/mechanical engineering/industry 4.0.jpg" class="card-img" alt="...">
+      <div class="card-img-overlay">
+        <h5 class="card-title">Industry 4.0</h5>
+      </div>
+    </div>
+    <div class="card bg-dark text-white ">
+      <img src="../../assets/mechanical engineering/robotics.jpg" class="card-img" alt="...">
+      <div class="card-img-overlay">
+        <h5 class="card-title">Robotics</h5>
+      </div>
+    </div>
+    <div class="card bg-dark text-white ">
+      <img src="../../assets/mechanical engineering/3d printing.jpg" class="card-img" alt="...">
+      <div class="card-img-overlay">
+        <h5 class="card-title">3D Printing</h5>
+      </div>
+    </div>
+    <div class="card bg-dark text-white ">
+      <img src="../../assets/mechanical engineering/automobile and manufacturing.jpg" class="card-img" alt="...">
+      <div class="card-img-overlay">
+        <h5 class="card-title">Automobile and Manufacturing</h5>
+      </div>
+    </div>
+  </div>
+ 
+   <mat-tab-group class="tabs">
+    <mat-tab label="STATE OF ART LABORATORIES"> 
+     <li> Robotics & Mechatronics Lab</li>
+     <li>CAD, CAM and CAE Tool Room</li>
+     <li>Advanced Material Testing Lab</li>
+     <li>Automobile Lab</li>
+     <li>Turbo-Machinery Lab</li>
+     <li>Fluid Mechanics Lab</li>
+     <li>Heat and Mass Transfer Lab</li>
+     <li>KOM & DOM Lab</li>
+     <li>IC Engine Lab</li>
+     <li>Vibration Engineering Lab</li>
+     <li>Design and Drafting Studio</li>
+     <li>Mechanical Workshop</li>
+     <li>BMW Twin Power Turbo inline 4-cylinder diesel engine</li>
+     <li>BMW eight-speed Steptronic automatic transmission</li>
+    </mat-tab>
+    <mat-tab label="MAJOR SOFTWARE & EQUIPMENT"> 
+      <li>CNC Machine (Servo & PLC Based)</li>
+      <li>CutViewer (CNC Simulator)</li>
+      <li>3D Printer</li>
+      <li>Solidworks (Dassault Systèmes)</li>
+      <li>ANSYS (FEA Simulation Software)</li>
+      <li>AutoCAD (by Autodesk)</li>
+      <li>Computerized UTM (600 kN)</li>
+      <li>Capstan & Turret Lathe</li>
+      <li>Turbine Test Rigs (Pelton, Kaplan and Francis) & Centrifugal Pump Test Rig</li>
+      <li>Load Test Rig for Petrol and Diesel Engines</li>
+    </mat-tab>
+    <mat-tab label="INDUSTRY ORIENTATED TRAINING">
+      <li>Industrial Robotics and Mechatronics Training (KUKA Robot, Germany & Yaskawa Robot, Japan)</li>
+      <li>SAE – Baja Collegiate Club</li>
+      <li>Bosch Rexroth (Industrial Automation Technology)</li>
+      <li>Advance CAD/CAM/CAE Training with Indo German Tool Room</li>
+      <li>Skill Upgradation Program with MI Daksha & Pyrotech Group</li>
+      <li>Student Chapter of Indian Institute of Industrial Engineering</li>
+      <li>PG diploma of Indian Rubber Institute</li>
+    </mat-tab>
+  </mat-tab-group>
+  <h1 style="color: #a0162a; text-align: center; padding: 20px; font-size: 50px; border: 1px solid #a0162a; width: 90%; margin: auto;">Our Faculty</h1>
+  <section>
+    <div class="container">
+      <div class="card col-md-3" *ngFor="let i of faculty">
+        <div class="content">
+            <div class="imgBx">
+              <img [src]="i.img">
+            </div>
+            <div class="contentBx">
+              <h3>{{i.name}}<br><span>{{i.post}}</span></h3>
+            </div>
+          </div>
+          <ul class="sci">
+            <li style="--i:1">
+             <a > <i class="bi bi-envelope-open-fill" aria-hidden="true" ></i></a>
+            </li>
+          </ul>
+        </div>
+     
+      </div>
+  </section>
+    <app-footer></app-footer>

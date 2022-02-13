@@ -1,0 +1,53 @@
+.club,.club2{
+
+    margin: auto;
+    width: 90%;
+    justify-content: center;
+    align-items: center;
+}
+.row{
+    display: flex;
+    max-width:100% ;
+}
+.club .card,.club2 .card{
+    margin: 20px;
+}
+.club2 h1{
+    text-align: center; color: #ae152d;
+    border: 1px solid #a0162a;
+}
+p{
+    color:#a0162a;
+}
+.jumbotron{
+    background-color: black;
+    width: 100%;
+    height: 300px;
+    padding: 50px;
+    font-size: 90px;
+    text-align:center;
+    color: whitesmoke;
+    
+}
+.jumbotron h1{
+    font-size: 90px;
+    text-align:center;
+    margin-top:100px;
+    animation: hideMe 3s forwards;
+
+}
+@keyframes hideMe{
+    0%{
+        opacity: 0;
+    }
+    99.99%{
+        opacity: 1;
+        transform: translateY(-30px);
+    }
+    100%{
+        opacity: 1;
+    }
+
+}
+  
+  

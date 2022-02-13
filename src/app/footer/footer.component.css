@@ -1,0 +1,20 @@
+footer{
+    background: #00152F;
+    color: white;
+    display: flex;
+
+}
+footer div{
+    margin: 4%;
+}
+footer ul{
+    list-style: none;
+}
+footer a{
+    margin: 4%;
+    font-size: 20px;
+}
+footer img{
+    height:50px;
+    width: 200px;
+}

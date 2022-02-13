@@ -1,0 +1,115 @@
+<div class="header">
+    <h1>
+      Electrical Engineering
+    </h1>
+    <h2 style="color: #a0162a; padding: 20px;"> Intake: 60 Seats</h2>
+  </div>
+  <p style="width: 80%; margin: auto; font-size: medium;">Electrical Engineering Department gives exposure to its students to various areas of Industry design skills through highly professional pieces of training of MATLAB, Rockwell (Allen Bradley PLC), Nayak Power System (PSCAD), Siemens PLCs (Logo) through actual fieldwork, hands-on and live design like Transformer designing (Step Down), erection and measurement projects: Real-Time Electrical Energy Monitoring and Cost-Benefit Analysis using Smart Meter. The academic distinction of the department is demonstrated by the excellent performance of students ranking among the toppers at the university, institute level and competitive exams like GATE and GRE. State of the art laboratories, Advance CAD tools, workshops and seminars empower the graduates for making application of the knowledge which they gain through experienced faculty of the department and student-centric teaching philosophy.</p>
+  <h4 class="head">Specialization</h4>
+  <div class="specialization">
+  
+    <div class="card bg-dark text-white ">
+      <img src="../../assets/Electrical engineering/electric drive.jpg" class="card-img" alt="...">
+      <div class="card-img-overlay">
+        <h5 class="card-title">Electric Drive and Power Electronics</h5>
+      </div>
+    </div>
+    <div class="card bg-dark text-white ">
+      <img src="../../assets/Electrical engineering/power system.jpg" class="card-img" alt="...">
+      <div class="card-img-overlay">
+        <h5 class="card-title">Power System Design</h5>
+      </div>
+    </div>
+    <div class="card bg-dark text-white ">
+      <img src="../../assets/Electrical engineering/renewable energy.jpg" class="card-img" alt="...">
+      <div class="card-img-overlay">
+        <h5 class="card-title">Renewable Energy</h5>
+      </div>
+    </div>
+    <div class="card bg-dark text-white ">
+      <img src="../../assets/Electrical engineering/plc.jpg" class="card-img" alt="...">
+      <div class="card-img-overlay">
+        <h5 class="card-title">
+          PLC Scada / PSCAD / MATLAB</h5>
+      </div>
+    </div>
+  </div>
+
+   <mat-tab-group class="tabs">
+    <mat-tab label="First">
+      <ul>
+        <li>Advanced Power Electronics Laboratory</li>
+        <li>PLC, Automation Laboratory (Allen Bradley CompactLogix PLCs,
+        <li>Siemens Logo PLCs)
+        <li>Electrical Machines Laboratory</li>
+        <li>Power Systems Laboratory</li>
+        <li>Electrical Measurements and Instrumentation Laboratory</li>
+        <li>Circuits and Electrical fundamentals Laboratory</li>
+        <li>Projects and Research Laboratory</li>
+        <li>Electric Drives Laboratory</li>
+        <li>Simulation Laboratory</li>
+        <li>Product Design Laboratory</li>
+      </ul>
+    </mat-tab>
+    <mat-tab label="Second"> 
+      <ul>
+       <li> Rockwell Automation Allen Bradley CompactLogix PLC Work Station</li>
+       <li>Siemens Logo PLCs</li>
+       <li>Smart Meter Design and Calculation</li>
+       <li>Transformer (Step down) Design Work Station</li>
+       <li>Cyclo-Convertors 3 Phase Convertors</li>
+       <li>Microprocessor Controlled 3 phase Dual Convertors</li>
+       <li>Bias Differential Relay and Buchholz Relay</li>
+       <li>Current Transformer Performance Testing</li>
+       <li>Synchronization of Alternators</li>
+       <li>Process control Simulator and Servomotor Characteristics</li>
+       <li>Energy Measurement and Electrical Installation</li>
+       <li>Tektronix High Voltage and Current Probes</li>
+       <li>Tektronix Power Analysis Bundle</li>
+       <li>Variable Frequency Control Drives</li>
+      </ul>
+    </mat-tab>
+    <mat-tab label="Third"> 
+      <ul>
+        <li>Automation & SCADA Training by Rockwell Automation</li>
+        <li>PSCAD Trainings by Nayak Power System</li>
+        <li>Electrical Installation Training by Industry Experts</li>
+        <li>Transformer Design Training by Experts</li>
+        <li>Field Training at substations and power plants</li>
+        <li>SMPS Training by Industrial Experts</li>
+      </ul>
+    </mat-tab>
+    <mat-tab label="Third"> 
+      <ul>
+        <li>MATLAB/SIMULINK</li>
+        <li>PSCAD/EMTDC</li>
+        <li>Electrical CAD</li>
+        <li>PSpice</li>
+        <li>LabView</li>
+        <li>Machine Design software</li>
+        <li>Multisim</li>
+      </ul>
+    </mat-tab>
+  </mat-tab-group>
+  <h1 style="color: #a0162a; text-align: center; padding: 20px; font-size: 50px; border: 1px solid #a0162a; width: 90%; margin: auto;">Our Faculty</h1>
+  <section>
+    <div class="container">
+      <div class="card col-md-3" *ngFor="let i of faculty">
+        <div class="content">
+            <div class="imgBx">
+              <img [src]="i.img">
+            </div>
+            <div class="contentBx">
+              <h3>{{i.name}}<br><span>{{i.post}}</span></h3>
+            </div>
+          </div>
+          <ul class="sci">
+            <li style="--i:1">
+             <a > <i class="bi bi-envelope-open-fill" aria-hidden="true" ></i></a>
+            </li>
+          </ul>
+        </div>
+     
+      </div>
+  </section>
+    <app-footer></app-footer>

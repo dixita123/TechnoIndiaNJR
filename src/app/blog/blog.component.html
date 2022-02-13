@@ -1,0 +1,20 @@
+<div class="jumbotron" aria-hidden="true">
+    <h1>News & Blog</h1>
+ </div>
+<section>
+    <div class="container">
+      <div class="card col-md-3" *ngFor="let i of news">
+    
+            <img [src]="i.img">
+            <div class="contentBx">
+                <div style="padding: 20px;">
+                    <p><span style="color: #a0162a; font-size: 100px;">.</span>{{i.year}}</p>
+                    <h2 class="head">{{i.haeding}}</h2>
+                    <p>{{i.subhead}}</p>
+                    <p>{{i.date}}</p>
+                  </div>
+         </div>
+         </div>
+     
+      </div>
+  </section>
